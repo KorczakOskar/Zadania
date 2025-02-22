@@ -1,0 +1,10 @@
+pole_kola= function(r) {
+  if (r>0) {
+  
+  pole= pi*(r^2)
+  return(pole)
+  }
+  else {
+    print ("Promień musi być większy od zera")
+  }
+}
