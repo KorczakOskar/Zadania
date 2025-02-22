@@ -1,4 +1,4 @@
-//zasady_rozliczania: "liniowo" lub "ogólne"
+#zasady_rozliczania: "liniowo" lub "ogólne"
 podatek_dochodowy = function (dochód,zasady_rozliczania) {
   if (dochód>0) {
     if (zasady_rozliczania=="liniowo") {
