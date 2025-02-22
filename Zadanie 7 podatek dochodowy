@@ -1,24 +1,23 @@
 #zasady_rozliczania: "liniowo" lub "ogólne"
 podatek_dochodowy = function (dochód,zasady_rozliczania) {
-  if (dochód>0) {
+  if (dochód<=0) {
+    print("Dochód musi być większy od zera")
+  }
+  else {
     if (zasady_rozliczania=="liniowo") {
       podatek = dochód*0.19
       return(podatek)
     }
     if (zasady_rozliczania=="ogólne") {
       if (dochód<= 85528) {  
-      podatek=(dochód*0.18) - 556
-          return (podatek)
-        }
-        else {
-          podatek= 14839 + ((dochód-85528)*0.32)
-          return(podatek)
-        }
-    
+        podatek=(dochód*0.18) - 556
+        return (podatek)
+      }
+      else {
+        podatek= 14839 + ((dochód-85528)*0.32)
+        return(podatek)
+      }
     }
-  }
-  else{
-    print("dochód musi być większy od zera")
-  }
-  
+    }
 }
+  
